@@ -14,14 +14,10 @@ public class Exercise_03 {
 
     public static void main(String[] args) {
 
+        // write code to print out  "Check out my first program!" below
         System.out.println("Hello World!");
+        System.out.println("Check out my first program!");
 
-        // write code to print out "Check out my first program!" below
-        System.out.println("Hello World!");
-        System.out.println("Check out Bo's first program!");
-        System.out.println("I am just practicing writing lines");
-        System.out.println("Andrew is taking a really long time today");
-        System.out.println("Bo worked on Java today 220512");
     }
 
 }
