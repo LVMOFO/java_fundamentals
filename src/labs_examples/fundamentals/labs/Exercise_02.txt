@@ -37,7 +37,7 @@ Cloning repository from Github
 
     ----------------------------------------Solution---------------------------------------------------------------
 
-    
+
 1) If you haven't already, please create a Github account if you have not already done so.
 	1. https://github.com/LVMOFO
 
