@@ -22,3 +22,190 @@ Example Output (pwd):
     1. Cadens-MacBook-Pro:CodingNomads cadenmackenzie$ pwd
        /Users/cadenmackenzie/Documents/CodingNomads
 
+C:\Users\exexs\Tools\cmder\Documents
+? ls
+CodingNomads/
+
+C:\Users\exexs\Tools\cmder\Documents
+? mkdir Terminal_testing
+
+C:\Users\exexs\Tools\cmder\Documents
+? cd Terminal_testing\
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? pwd
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? touch red.text
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? touch white.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? touch blue.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? ls -alh
+total 4.0K
+drwxr-xr-x 1 exexs 197609 0 May 13 20:13 ./
+drwxr-xr-x 1 exexs 197609 0 May 13 20:12 ../
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 blue.txt
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 red.text
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 white.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? mv red.text red.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? ls -alh
+total 4.0K
+drwxr-xr-x 1 exexs 197609 0 May 13 20:13 ./
+drwxr-xr-x 1 exexs 197609 0 May 13 20:12 ../
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 blue.txt
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 red.txt
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 white.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? mkdir mustang
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? cp red.txt \mustang
+cp: cannot create regular file '\mustang': Permission denied
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? ls -alh
+total 4.0K
+drwxr-xr-x 1 exexs 197609 0 May 13 20:14 ./
+drwxr-xr-x 1 exexs 197609 0 May 13 20:12 ../
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 blue.txt
+drwxr-xr-x 1 exexs 197609 0 May 13 20:14 mustang/
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 red.txt
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 white.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? cd mustang
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? cp ../red.txt red.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+red.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? mv ../blue.txt blue.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+blue.txt  red.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? cd ..
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? ls
+mustang/  red.txt  white.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing
+? cd mustang
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? mkdir shelbygt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? touch eleanor
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+blue.txt  eleanor  red.txt  shelbygt/
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls -alh
+total 0
+drwxr-xr-x 1 exexs 197609 0 May 13 20:18 ./
+drwxr-xr-x 1 exexs 197609 0 May 13 20:17 ../
+-rw-r--r-- 1 exexs 197609 0 May 13 20:13 blue.txt
+-rw-r--r-- 1 exexs 197609 0 May 13 20:18 eleanor
+-rw-r--r-- 1 exexs 197609 0 May 13 20:16 red.txt
+drwxr-xr-x 1 exexs 197609 0 May 13 20:18 shelbygt/
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? rm eleanor
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? rm -r shelbygt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+blue.txt  red.txt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? mkdir shelbygt
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? cd shelbygt\
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang\shelbygt
+? ls
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang\shelbygt
+? touch deletefile
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang\shelbygt
+? touch deletefolder
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang\shelbygt
+? ls
+deletefile  deletefolder
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang\shelbygt
+? cd ..
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+blue.txt  red.txt  shelbygt/
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? rm -r shelbygt\
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? ls
+blue.txt  red.txt
+
+
+
+CHALLENGE:
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? cat blue.txt
+I cannot see the text in Cmder.  Hopfully will come out ok
+Two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+eleven
+twelve
+thirtenn
+fourteen
+fiftenn
+sixteen
+seventeen
+eighteen
+nineteen
+twenty::
+
+C:\Users\exexs\Tools\cmder\Documents\Terminal_testing\mustang
+? grep ten blue.txt
+ten
+thirtenn
+fiftenn
+
+C:\Users\

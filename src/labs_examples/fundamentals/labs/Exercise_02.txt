@@ -32,3 +32,359 @@ Cloning repository from Github
     3. Create new repository on Github
     4. Add new remote on local machine
     5. Push to new Github repository
+
+    ----------------------------------------ATTEMPT 3---------------------------------------------------------------
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+    ? ls
+    Bo/  labs/  projects/  resources/
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+    ? mkdir git_practice
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+    ? cd git_practice\
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice
+    ? git init
+    Initialized empty Git repository in C:/Users/exexs/Tools/cmder/Documents/CodingNomads/git_practice/.git/
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? touch newFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git status
+    On branch master
+
+    No commits yet
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            newFile
+
+    nothing added to commit but untracked files present (use "git add" to track)
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git add newFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git status
+    On branch master
+
+    No commits yet
+
+    Changes to be committed:
+      (use "git rm --cached <file>..." to unstage)
+            new file:   newFile
+
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git commit -m "Initial git_practice files"
+    [master (root-commit) cbe45c5] Initial git_practice files
+     1 file changed, 0 insertions(+), 0 deletions(-)
+     create mode 100644 newFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git status
+    On branch master
+    nothing to commit, working tree clean
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git remote -v
+    boGitEx https://github.com/LVMOFO/git_practice.git (fetch)
+    boGitEx https://github.com/LVMOFO/git_practice.git (push)
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git remote add LVMOFO https://github.com/LVMOFO/git_practice.git
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git remote -v
+    LVMOFO  https://github.com/LVMOFO/git_practice.git (fetch)
+    LVMOFO  https://github.com/LVMOFO/git_practice.git (push)
+    boGitEx https://github.com/LVMOFO/git_practice.git (fetch)
+    boGitEx https://github.com/LVMOFO/git_practice.git (push)
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master)
+    ? git push -u LVMOFO master
+    Enumerating objects: 3, done.
+    Counting objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 217 bytes | 217.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/LVMOFO/git_practice.git
+     * [new branch]      master -> master
+    branch 'master' set up to track 'LVMOFO/master'.
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+
+    ----------------------------------------Second part---------------------------------------------------------------
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? ls
+    newFile  secondFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? ls -alh
+    total 14K
+    drwxr-xr-x 1 exexs 197609  0 May 13 22:08 ./
+    drwxr-xr-x 1 exexs 197609  0 May 13 21:20 ../
+    drwxr-xr-x 1 exexs 197609  0 May 13 21:59 .git/
+    -rw-r--r-- 1 exexs 197609 51 May 13 22:07 newFile
+    -rw-r--r-- 1 exexs 197609 30 May 13 22:08 secondFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git status
+    On branch master
+    Your branch is up to date with 'LVMOFO/master'.
+
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   newFile
+
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
+            secondFile
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git add secondFile
+    warning: LF will be replaced by CRLF in secondFile.
+    The file will have its original line endings in your working directory
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git status
+    On branch master
+    Your branch is up to date with 'LVMOFO/master'.
+
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            new file:   secondFile
+
+    Changes not staged for commit:
+      (use "git add <file>..." to update what will be committed)
+      (use "git restore <file>..." to discard changes in working directory)
+            modified:   newFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git add newFile
+    warning: LF will be replaced by CRLF in newFile.
+    The file will have its original line endings in your working directory
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git status
+    On branch master
+    Your branch is up to date with 'LVMOFO/master'.
+
+    Changes to be committed:
+      (use "git restore --staged <file>..." to unstage)
+            modified:   newFile
+            new file:   secondFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git commit -m "Second push with new file"
+    [master a5ed9f4] Second push with new file
+     2 files changed, 27 insertions(+)
+     create mode 100644 secondFile
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git status
+    On branch master
+    Your branch is ahead of 'LVMOFO/master' by 1 commit.
+      (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git push
+    Enumerating objects: 6, done.
+    Counting objects: 100% (6/6), done.
+    Delta compression using up to 12 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (4/4), 361 bytes | 361.00 KiB/s, done.
+    Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/LVMOFO/git_practice.git
+       cbe45c5..a5ed9f4  master -> master
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+
+
+    ----------------------------------------Finished---------------------------------------------------------------
+
+
+    Adding a remote:
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git remote add boGitEx2 https://github.com/LVMOFO/git_practice_2.git
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? !148
+    LVMOFO  https://github.com/LVMOFO/git_practice.git (fetch)
+    LVMOFO  https://github.com/LVMOFO/git_practice.git (push)
+    boGitEx https://github.com/LVMOFO/git_practice.git (fetch)
+    boGitEx https://github.com/LVMOFO/git_practice.git (push)
+    boGitEx2        https://github.com/LVMOFO/git_practice_2.git (fetch)
+    boGitEx2        https://github.com/LVMOFO/git_practice_2.git (push)
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> LVMOFO)
+    ? git push -u boGitEx2 master
+    Enumerating objects: 7, done.
+    Counting objects: 100% (7/7), done.
+    Delta compression using up to 12 threads
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (7/7), 546 bytes | 546.00 KiB/s, done.
+    Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/LVMOFO/git_practice_2.git
+     * [new branch]      master -> master
+    branch 'master' set up to track 'boGitEx2/master'.
+
+    C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> boGitEx2)
+
+
+    ----------------------------------------Finished---------------------------------------------------------------
+
+
+
+
+
+Cloning repository from Github
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\git_practice(master -> boGitEx2)
+? cd ..
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+? ls
+Bo/  git_practice/  labs/  projects/  resources/
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+? mkdir facebox
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+? ls
+Bo/  facebox/  git_practice/  labs/  projects/  resources/
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+? cd facebox
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox
+? git init
+Initialized empty Git repository in C:/Users/exexs/Tools/cmder/Documents/CodingNomads/facebox/.git/
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+? git remote -v
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+? git remote add bofacebox https://github.com/defunkt/facebox.git
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+? git remote -v
+bofacebox       https://github.com/defunkt/facebox.git (fetch)
+bofacebox       https://github.com/defunkt/facebox.git (push)
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+? git pull bofacebox master
+remote: Enumerating objects: 335, done.
+Receiving objects:  77% (258/335)ed 0 (delta 0), pack-reused 335Receiving objects:  75% (252/335) Receiving objects: 100% (335/335), 913.04 KiB | 4.68 MiB/s, done.
+Resolving deltas: 100% (162/162), done.
+From https://github.com/defunkt/facebox
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> bofacebox/master
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+? ls
+examples/  lib/  LICENSE  README.md  src/
+
+C:\Users\exexs\Tools\cmder\Documents\CodingNomads\facebox(master)
+
+  ----------------------------------------Finished---------------------------------------------------------------
+Cloning repository from Github
+    1. Find a repository on Github
+    2. Clone repository to local machine
+    3. Create new repository on Github
+    4. Add new remote on local machine
+    5. Push to new Github repository
+
+    1. https://github.com/eugenp/tutorials.git
+    2. 	C:\Users\exexs\Tools\cmder\Documents\CodingNomads
+       	λ git clone https://github.com/eugenp/tutorials.git
+       	Cloning into 'tutorials'...
+       	remote: Enumerating objects: 311391, done.
+       	remote: Counting objects: 100% (2/2), done.
+       	remote: Compressing objects: 100% (2/2), done.
+       	remote: Total 311391 (delta 0), reused 1 (delta 0), pack-reused 311389
+       	Receiving objects: 100% (311391/311391), 322.47 MiB | 26.70 MiB/s, done.
+       	Resolving deltas: 100% (88982/88982), done.
+       	Updating files: 100% (23116/23116), done.
+
+     3. https://github.com/LVMOFO/eugenp_tutorial.git
+     4. C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git status
+        On branch master
+        Your branch is up to date with 'origin/master'.
+
+        nothing to commit, working tree clean
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ touch lvmofo
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ vim lvmofo
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git add lvmofo
+        warning: LF will be replaced by CRLF in lvmofo.
+        The file will have its original line endings in your working directory
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git commit -m "First commit lvmofo stamp"
+        [master 5eda469331] First commit lvmofo stamp
+         1 file changed, 1 insertion(+)
+         create mode 100644 lvmofo
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git status
+        On branch master
+        Your branch is ahead of 'origin/master' by 1 commit.
+          (use "git push" to publish your local commits)
+
+        nothing to commit, working tree clean
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git remote -v
+        origin  https://github.com/eugenp/tutorials.git (fetch)
+        origin  https://github.com/eugenp/tutorials.git (push)
+
+       C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git remote add LVMOFO https://github.com/LVMOFO/tutorials.git
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git remote -v
+        LVMOFO  https://github.com/LVMOFO/tutorials.git (fetch)
+        LVMOFO  https://github.com/LVMOFO/tutorials.git (push)
+        origin  https://github.com/eugenp/tutorials.git (fetch)
+        origin  https://github.com/eugenp/tutorials.git (push)
+
+     5.   C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> origin)
+        λ git push -u LVMOFO master
+        Enumerating objects: 311394, done.
+        Counting objects: 100% (311394/311394), done.
+        Delta compression using up to 12 threads
+        Compressing objects: 100% (157128/157128), done.
+        Writing objects: 100% (311394/311394), 322.45 MiB | 1.37 MiB/s, done.
+        Total 311394 (delta 88985), reused 311389 (delta 88982), pack-reused 0
+        remote: Resolving deltas: 100% (88985/88985), done.
+        remote: Checking connectivity: 311394, done.
+        remote: warning: See http://git.io/iEPt8g for more information.
+        remote: warning: File spring-web-modules/spring-mvc-xml/src/test/resources/GeoLite2-City.mmdb is 54.06 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB
+        remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+        To https://github.com/LVMOFO/tutorials.git
+         * [new branch]            master -> master
+        branch 'master' set up to track 'LVMOFO/master'.
+
+        C:\Users\exexs\Tools\cmder\Documents\CodingNomads\tutorials(master -> LVMOFO)
+
+----------------------------------------Finished---------------------------------------------------------------
+
+
+
+
+
