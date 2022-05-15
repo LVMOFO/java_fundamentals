@@ -21,7 +21,7 @@ public class Exercise_05 {
         // please initialize a boolean variable and test whether str is equal to str2
         boolean bEquiv = str.equals(str2);
         System.out.println(str + " is equivalent to " + str2 + " = " + bEquiv);
-        
+
         // please concatenate str & str2 and set the result to a new String variable below
         String str3 = str + str2;
         System.out.println("Concat of str and str2 = " + str3);
