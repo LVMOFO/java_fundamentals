@@ -24,6 +24,14 @@ public class Exercise_02 {
     public static void main(String[] args) {
 
         // write code here
+        int i = 10;
+        double d = i;
+        System.out.println("Widening Casting int i (10) to double d = " + d);
+        double e = 10.5;
+        int j = (int)e;
+        System.out.println("Narrowing Casting double e (10.5) to int j  = " + j);
+        System.out.println("Narrowing Casting causes information loss");
+
 
     }
 }

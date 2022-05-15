@@ -18,8 +18,25 @@ class RelationalOperators {
         }
 
         // write your code below
-
+        int c = 25;
+        int d = 50;
+        if (c < d){
+            System.out.println("c is less than d");
+        }
+        if (c <= d){
+            System.out.println("c is less than or equal to d");
+        }
+        if (d > c){
+            System.out.println("d is greater  c");
+        }
+        if (d >= c){
+            System.out.println("d is greater than or equal to c");
+        }
+        if (c == d){
+            System.out.println("c is equal to d");
+        }   else {System.out.println("[ELSE] c is not equal to d");}
     }
 
-}
+
+    }
 

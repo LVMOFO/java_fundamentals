@@ -24,6 +24,15 @@ public class Exercise_07 {
         int days = scanner.nextInt();
 
         // write completed code here
-
+        if (days <= 1000000 & days > 0) {
+            int seconds = 86400;
+            long totalSeconds = (long)days * (long)seconds;
+            //long maxLong = 9223372036854775807L;
+            //System.out.println("Max Long = 9,223,372,036,854,775,807  Var Set to that:" + maxLong);
+            System.out.print("There are -->" + totalSeconds + " in " + days + " days!");
+        } else {
+            System.out.println("You entry was to big or to small; try again");
+        }
     }
+
 }
