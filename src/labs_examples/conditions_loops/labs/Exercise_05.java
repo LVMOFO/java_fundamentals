@@ -1,5 +1,8 @@
 package labs_examples.conditions_loops.labs;
-
+/**
+ * Modified by Bo Bender 220516@1319
+ */
+import java.util.Scanner;
 /**
  * Conditions and Loops Exercise 5: Calculator
  *
@@ -16,4 +19,29 @@ package labs_examples.conditions_loops.labs;
  */
 
 public class Exercise_05 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an upper bound number <= 1000000: ");
+        int number = scanner.nextInt();
+        System.out.print("Enter a lower bound number >= 0: ");
+        int number2 = scanner.nextInt();
+        System.out.println(" ");
+        int cycles = number - number2 + 1;
+        int i = 1;
+        int val = 0;
+        for (i = number2; i <= number; i++)
+        {
+            val += i;
+            if (i == number) {
+                System.out.println(" ");
+                System.out.println("Upper Bound =" + number);
+                System.out.println("Lower Bound =" + number2);
+                System.out.println(" ");
+                System.out.println("The sum of the numbers is =" + val);
+                double d = (double)val / (double)cycles;
+                System.out.println("The average of the numbers is =" + d + "| val =" + val + "| cycles =" + cycles);
+            }
+
+        }
+    }
 }

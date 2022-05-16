@@ -1,5 +1,7 @@
 package labs_examples.conditions_loops.labs;
-
+/**
+ * Modified by Bo Bender 220516@0947
+ */
 import java.util.Scanner;
 
 /**
@@ -24,6 +26,17 @@ public class Exercise_01 {
         int number = scanner.nextInt();
 
         // write completed code here
-
+        int iNumberIn = number;
+        System.out.println("Your number is:" + iNumberIn);
+        if(iNumberIn > 0 && iNumberIn <= 1000000){
+                int iTest = iNumberIn % 2;
+                if (iTest == 0) {
+                    System.out.println("Your number is even");
+                } else {
+                    System.out.println("Your number is odd");
+                }
+            } else {
+                System.out.println("You number is outside the acceptable range.  Please try again.");
+            }
+        }
     }
-}
