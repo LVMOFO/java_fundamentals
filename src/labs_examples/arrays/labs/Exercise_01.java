@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
-
+/**
+ * Modified by Bo Bender 220518@0001
+ */
 import java.util.Scanner;
 
 /**

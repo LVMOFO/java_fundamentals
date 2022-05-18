@@ -1,5 +1,7 @@
 package labs_examples.arrays.labs;
-
+/**
+ * Modified by Bo Bender 220518@0040
+ */
 /**
  *  Irregular Arrays
  *
@@ -9,5 +11,18 @@ package labs_examples.arrays.labs;
  */
 
 public class Exercise_04 {
-
+    public static void main(String[] args) {
+        String[][] sRegArray = {
+                {"Bo", "Mackenzie", "Reise", "Maxius"},
+                {"Michele", "Lauren", "Latte", "Magic", "Chicken1", "Chicken2"},
+                {"Amy", "Barb", "Olive", "Justice", "Batman", "Boo", "Beef"},
+                {"Lou", "MaryLou", "Mikey"}
+        };
+        for (String[] sRows : sRegArray){
+            for (String sCols : sRows){
+                System.out.print(sCols + " ");
+            }
+            System.out.println();
+        }
+    }
 }
