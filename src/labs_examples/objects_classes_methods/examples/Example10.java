@@ -1,4 +1,7 @@
 package labs_examples.objects_classes_methods.examples;//package main.java.chapter4;
+/**
+ * Modified by Bo Bender 220522@1204
+ */
 //
 //// A simple constructor.
 //
