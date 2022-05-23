@@ -6,10 +6,11 @@ public class MethodOverloading {
     }
     //Method Overloading Below
     public static void runMethodOverloading(){
-        System.out.println("--------------------THIS IS AN EXAMPLE OF METHOD OVERLOADING--------------------");
+        System.out.println("#1.--------------------THIS IS AN EXAMPLE OF METHOD OVERLOADING--------------------");
         int i = 0;
         double j = 0;
         float k=0.0f;
+        System.out.println("---Using iMultiply with Integers---");
         i = iMultiply(10,7);
         System.out.println(i);
         i = iMultiply(10,7, 8);
@@ -19,8 +20,8 @@ public class MethodOverloading {
         i = iMultiply(10,7, 8, 2, 3);
         System.out.println(i);
         System.out.println();
-        System.out.println();
 
+        System.out.println("---Using iMultiply with Doubles---");
         j = iMultiply(10,7);
         System.out.println(j);
         j = iMultiply(10,7, 8);
@@ -30,8 +31,8 @@ public class MethodOverloading {
         j = iMultiply(10,7, 8, 2, 3);
         System.out.println(j);
         System.out.println();
-        System.out.println();
 
+        System.out.println("---Using iMultiply with Floats---");
         k = iMultiply(10.0f,7.0f);
         System.out.println(k);
         k = iMultiply(10.0f,7.0f, 8.0f);
