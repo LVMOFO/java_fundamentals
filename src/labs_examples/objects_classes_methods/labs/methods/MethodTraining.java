@@ -34,7 +34,11 @@ public class MethodTraining {
         //        In this method create an Integer ArrayList and populate it with each number between zero and maxNum that is
         //        divisible by both divisor1 and divisor2. Then return this ArrayList. After calling this method, print out the
         //        length of the returned list
+        int[] returnArray = DivisibleByBoth.isDivisibleByBoth(100, 4, 10);
+        System.out.println("Finished");
 
+        //8) Write a method that will reverse an array in place use only one extra temp variable. For this exercise you cannot instantiate a second array. You must reverse the array in place using only one extra temp variable. Hint: this
+        //        variable is used to temporarily store individual values in the array
     }
 
 
