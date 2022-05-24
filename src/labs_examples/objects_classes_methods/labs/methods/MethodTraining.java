@@ -43,8 +43,8 @@ public class MethodTraining {
 
         //8) Write a method that will reverse an array in place use only one extra temp variable. For this exercise you cannot instantiate a second array.
         // You must reverse the array in place using only one extra temp variable. Hint: this variable is used to temporarily store individual values in the array
-
-
+        int[] initialOrder = {13, 15, 16, 25, 47, 50};
+        int[] reversedArray = ReverseArray.reverseAnArray(initialOrder);
     }
 
 
