@@ -4,6 +4,8 @@ package labs_examples.arrays.labs;
  */
 import java.util.Scanner;
 
+import java.util.Arrays;
+
 /**
  * Arrays calculator
  *
