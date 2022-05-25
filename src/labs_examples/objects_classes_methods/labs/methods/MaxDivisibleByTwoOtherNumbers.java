@@ -1,6 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
-
-import java.sql.SQLOutput;
+/**
+ * Modified by Bo Bender 220524@1430
+ */
 import java.util.ArrayList;
 
 public class MaxDivisibleByTwoOtherNumbers {

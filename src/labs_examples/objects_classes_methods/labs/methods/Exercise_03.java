@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
-
+/**
+ * Modified by Bo Bender 220524@1430
+ */
 /**
  * Create a recursive method named factorial that will return the factorial of any number passed to it.
  *

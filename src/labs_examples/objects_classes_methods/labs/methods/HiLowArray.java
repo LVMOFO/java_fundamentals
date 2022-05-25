@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.methods;
-
+/**
+ * Modified by Bo Bender 220524@1430
+ */
 public class HiLowArray {
     public static void main(String[] args) {
 
