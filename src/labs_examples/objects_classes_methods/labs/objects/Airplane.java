@@ -2,97 +2,101 @@ package labs_examples.objects_classes_methods.labs.objects;
 /**
  * Created by Bo Bender 220525@1930
  */
+public class Airplane {
+        PowerPlant powerPlant;
+        Weapons weapons;
+        CounterMeasures counterMeasures;
+        Wings wings;
+        Tires tires;
+        private String planeType;
+        private double fuelCapacity;
+        private double currentFuelLevel;
+        public Airplane(PowerPlant powerPlant, Weapons weapons, CounterMeasures counterMeasures, Wings wings, Tires tires, String planeType, double fuelCapacity, double currentFuelLevel){
+            this.powerPlant = powerPlant;
+            this.weapons = weapons;
+            this.counterMeasures = counterMeasures;
+            this.wings = wings;
+            this.tires = tires;
+            this.planeType = planeType;
+            this.fuelCapacity = fuelCapacity;
+            this.currentFuelLevel = currentFuelLevel;
+        }
 
-class AirplaneExample {
-    public static void main(String[] args) {
-
+    public PowerPlant getPowerPlant() {
+        return powerPlant;
     }
-}
 
+    public void setPowerPlant(PowerPlant powerPlant) {
+        this.powerPlant = powerPlant;
+    }
 
+    public Weapons getWeapons() {
+        return weapons;
+    }
 
+    public void setWeapons(Weapons weapons) {
+        this.weapons = weapons;
+    }
 
+    public CounterMeasures getCounterMeasures() {
+        return counterMeasures;
+    }
 
-class Airplane {
-    double fuelCapacity;
-    double currentFuelLevel;
-    public Airplane(double fuelCapacity, double currentFuelLevel){
+    public void setCounterMeasures(CounterMeasures counterMeasures) {
+        this.counterMeasures = counterMeasures;
+    }
+
+    public Wings getWings() {
+        return wings;
+    }
+
+    public void setWings(Wings wings) {
+        this.wings = wings;
+    }
+
+    public Tires getTires() {
+        return tires;
+    }
+
+    public void setTires(Tires tires) {
+        this.tires = tires;
+    }
+
+    public String getPlaneType() {
+        return planeType;
+    }
+
+    public void setPlaneType(String planeType) {
+        this.planeType = planeType;
+    }
+
+    public double getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(double fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
+    }
+
+    public double getCurrentFuelLevel() {
+        return currentFuelLevel;
+    }
+
+    public void setCurrentFuelLevel(double currentFuelLevel) {
         this.currentFuelLevel = currentFuelLevel;
-    }
-}
-
-
-
-
-class Weapons{
-    boolean hasMissiles;
-    int bulletSize;
-    public Weapons(boolean hasMissiles, int bulletSize){
-        this.hasMissiles = hasMissiles;
-        this.bulletSize = bulletSize;
-    }
-}
-
-
-
-
-class PowerPlant{
-    double maxSpeed;
-    double thrust;
-
-    public PowerPlant(double maxSpeed, double thrust) {
-        this.maxSpeed = maxSpeed;
-        this.thrust = thrust;
-    }
-}
-
-
-
-
-class Wings{
-    int wingSpan;
-    String maker;
-
-    public Wings(int wingSpan, String maker){
-        this.wingSpan = wingSpan;
-        this.maker = maker;
-
-    }
-}
-
-
-
-
-class Tires{
-    int tirePressure;
-    int brand;
-    public Tires(int tirePressure, int brand){
-        this.tirePressure = tirePressure;
-        this.brand = brand;
-    }
-
-    public int getTirePressure() {
-        return tirePressure;
-    }
-
-    public void setTirePressure(int tirePressure) {
-        this.tirePressure = tirePressure;
-    }
-
-    public int getBrand() {
-        return brand;
-    }
-
-    public void setBrand(int brand) {
-        this.brand = brand;
     }
 
     @Override
     public String toString() {
-        return "Tires{" +
-                "tirePressure=" + tirePressure +
-                ", brand=" + brand +
+        return "Airplane{" +
+                "powerPlant=" + powerPlant +
+                ", weapons=" + weapons +
+                ", counterMeasures=" + counterMeasures +
+                ", wings=" + wings +
+                ", tires=" + tires +
+                ", planeType='" + planeType + '\'' +
+                ", fuelCapacity=" + fuelCapacity +
+                ", currentFuelLevel=" + currentFuelLevel +
                 '}';
     }
 }
