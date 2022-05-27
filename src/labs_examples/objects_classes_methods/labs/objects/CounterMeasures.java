@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
-
+/**
+ * Created by Bo Bender 220525@1930
+ */
 public class CounterMeasures {
     private boolean hasChaff;
     private boolean hasFlare;

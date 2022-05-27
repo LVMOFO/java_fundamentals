@@ -11,7 +11,8 @@ public class Airplane {
         private String planeType;
         private double fuelCapacity;
         private double currentFuelLevel;
-        public Airplane(PowerPlant powerPlant, Weapons weapons, CounterMeasures counterMeasures, Wings wings, Tires tires, String planeType, double fuelCapacity, double currentFuelLevel){
+        GIJoe giJoe;
+        public Airplane(PowerPlant powerPlant, Weapons weapons, CounterMeasures counterMeasures, Wings wings, Tires tires, String planeType, double fuelCapacity, double currentFuelLevel, GIJoe giJoe){
             this.powerPlant = powerPlant;
             this.weapons = weapons;
             this.counterMeasures = counterMeasures;
@@ -20,6 +21,8 @@ public class Airplane {
             this.planeType = planeType;
             this.fuelCapacity = fuelCapacity;
             this.currentFuelLevel = currentFuelLevel;
+            this.giJoe = new GIJoe("Maximus", "Brigadier General");
+
         }
 
     public PowerPlant getPowerPlant() {

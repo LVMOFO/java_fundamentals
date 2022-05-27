@@ -1,5 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
-
+/**
+ * Created by Bo Bender 220526@2330
+ */
 public class GIJoe {
     String name;
     String rank;
