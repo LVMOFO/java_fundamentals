@@ -1,7 +1,7 @@
 package labs_examples.objects_classes_methods.labs.objects;
-
-import java.nio.file.Watchable;
-
+/**
+ * Created by Bo Bender 220526@2130
+ */
 public class SampleAirplane {
     public static void main(String[] args) {
         PowerPlant myPowerPlant = new PowerPlant(702, 7000);
@@ -11,6 +11,15 @@ public class SampleAirplane {
         Tires myTires = new Tires(120, "Goodyear");
         Airplane myAirplane = new Airplane(myPowerPlant, myWeapons, myCounterMeasures,  myWings, myTires, "A-10",400d, 0.88d);
 
-        //System.out.println("My plane is an " + myAirplane.planeType + " it has a bullet count of " + myWeapons.bulletCount);
+        System.out.println("My plane is an " + myAirplane.getPlaneType() + " it has a bullet count of " + myAirplane.getWeapons().getBulletCount() + " and has CounterMeasures of : " + myAirplane.getCounterMeasures());
+        System.out.println();
+        System.out.println("My Airplane : " + myAirplane.toString());
+        System.out.println("Set Method Here:");
+        myAirplane.setPlaneType("OA10-A");
+        System.out.println("Get Method Here:");
+        String zPlane = myAirplane.getPlaneType();
+        System.out.println(zPlane);
+        System.out.println("myAirplane toString here: ");
+        System.out.println("My Airplane : " + myAirplane.toString());
     }
 }

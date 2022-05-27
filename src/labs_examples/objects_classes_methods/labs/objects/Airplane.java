@@ -89,14 +89,14 @@ public class Airplane {
     @Override
     public String toString() {
         return "Airplane{" +
-                "powerPlant=" + powerPlant +
-                ", weapons=" + weapons +
-                ", counterMeasures=" + counterMeasures +
-                ", wings=" + wings +
-                ", tires=" + tires +
-                ", planeType='" + planeType + '\'' +
-                ", fuelCapacity=" + fuelCapacity +
-                ", currentFuelLevel=" + currentFuelLevel +
+                "powerPlant=" + powerPlant + '\n' +
+                ", weapons=" + weapons + '\n' +
+                ", counterMeasures=" + counterMeasures + '\n' +
+                ", wings=" + wings + '\n' +
+                ", tires=" + tires + '\n' +
+                ", planeType='" + planeType + '\n' +
+                ", fuelCapacity=" + fuelCapacity + '\n' +
+                ", currentFuelLevel=" + currentFuelLevel + '\n' +
                 '}';
     }
 }
