@@ -7,10 +7,6 @@ public class Motorcycle extends Vehicle {
         private int cc;
         private boolean twoSeat;
 
-    public Motorcycle(int cc, boolean twoSeat) {
-        this.cc = cc;
-        this.twoSeat = twoSeat;
-    }
 
     public Motorcycle(String make, String model, double miles, int cc, boolean twoSeat) {
         super(make, model, miles);
