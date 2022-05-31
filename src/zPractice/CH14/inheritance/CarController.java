@@ -1,5 +1,7 @@
 package zPractice.CH14.inheritance;
-
+/**
+ * Created by Bo Bender 220529@1000
+ */
 public class CarController {
     public static void main(String[] args) {
         Truck truck = new Truck("Ford", "F350", 25000, 500);

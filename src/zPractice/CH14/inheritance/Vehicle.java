@@ -1,5 +1,7 @@
 package zPractice.CH14.inheritance;
-
+/**
+ * Created by Bo Bender 220529@1000
+ */
 public class Vehicle {
     protected String make;
     protected String model;

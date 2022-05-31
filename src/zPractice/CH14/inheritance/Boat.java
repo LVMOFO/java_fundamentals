@@ -1,5 +1,7 @@
 package zPractice.CH14.inheritance;
-
+/**
+ * Created by Bo Bender 220531@0030
+ */
 public class Boat extends Vehicle{
     private boolean isInboard;
     private boolean isSpeedBoat;
