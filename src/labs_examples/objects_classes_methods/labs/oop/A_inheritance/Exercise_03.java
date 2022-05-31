@@ -3,8 +3,8 @@ package labs_examples.objects_classes_methods.labs.oop.A_inheritance;
 /**
  * Why does the output print in the order it does?
  *
- * You answer:
- *
+ * You answer: C_1 is an extension of B_1 which is an extension of A_1.  So it begins at C_1 and climbs hierarchy up to A_1.
+ * Then runs sout, then goes to B_1 and runs sout.  Finally returning to C_1 and doing the sout.
  */
 
 class A_1 {

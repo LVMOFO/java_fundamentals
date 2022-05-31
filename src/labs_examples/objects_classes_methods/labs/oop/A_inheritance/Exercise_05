@@ -1,7 +1,9 @@
 
 Without running the code below, please tell me what will print. Why?
-
-
+In the class below only constructors are utilized; in this case the Parent constructor is called automatically so
+you get both:
+Parent called
+Child called
 
 
 public class InheritanceTest

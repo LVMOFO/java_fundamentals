@@ -1,6 +1,6 @@
 
 Without running the code below, please tell me what it will print.
-
+"Child called"
 
 
 public class InheritanceTest
@@ -8,7 +8,7 @@ public class InheritanceTest
   public static void main(String[] args)
   {
     Parent c = new Child();
-    c.doSomething();
+    c.doSomething();  //specifically calling the method
   }
 }
 
