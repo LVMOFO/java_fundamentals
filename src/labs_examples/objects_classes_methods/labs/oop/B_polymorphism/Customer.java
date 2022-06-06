@@ -1,7 +1,4 @@
 package labs_examples.objects_classes_methods.labs.oop.B_polymorphism;
-
-import java.sql.SQLOutput;
-
 /**
  * Created by Bo Bender 220602@2244
  */
