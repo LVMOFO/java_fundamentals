@@ -2,7 +2,7 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 /**
  * Created by Bo Bender 220605@1738
  */
-public class Card {
+public class Card{
     protected char[] suit = new char[]{'♣', '♦', '♥', '♠'};
     protected int cardValue;
     protected char[] rank = new char[]{'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
@@ -10,6 +10,7 @@ public class Card {
     protected int[] cardInDeck = new int[52];
 
 
+    //public void int[] loadCards(){
     public void loadCards(){
         int i = 0;
         int iSuit = suit.length;
@@ -26,6 +27,7 @@ public class Card {
                 i++;
             }
         }
+        //return deckOfCards[];
         //System.out.println(Card.toString());
     }
 }
