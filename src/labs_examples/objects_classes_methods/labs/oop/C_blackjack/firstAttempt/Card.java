@@ -1,16 +1,17 @@
-package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
+package labs_examples.objects_classes_methods.labs.oop.C_blackjack.firstAttempt;
 /**
  * Created by Bo Bender 220605@1738
  */
 public class Card{
-    public char[] suit = new char[]{'♣', '♦', '♥', '♠'};
+    protected char[] suit = new char[]{'♣', '♦', '♥', '♠'};
     protected int cardValue;
     protected char[] rank = new char[]{'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
     public String[] deckOfCards = new String[52];
-    public int[] cardInDeck = new int[52];
+    protected int[] cardInDeck = new int[52];
     protected int holdCard;
 
 
+    //public void int[] loadCards(){
     public void loadCards(){
         int i = 0;
         int iSuit = suit.length;

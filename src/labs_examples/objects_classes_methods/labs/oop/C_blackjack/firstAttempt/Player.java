@@ -1,4 +1,5 @@
-package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
+package labs_examples.objects_classes_methods.labs.oop.C_blackjack.firstAttempt;
+
 import java.util.Scanner;
 /**
  * Created by Bo Bender 220605@1734

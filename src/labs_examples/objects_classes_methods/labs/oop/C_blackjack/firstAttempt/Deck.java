@@ -1,4 +1,4 @@
-package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
+package labs_examples.objects_classes_methods.labs.oop.C_blackjack.firstAttempt;
 /**
  * Created by Bo Bender 220605@1744
  */
@@ -17,27 +17,7 @@ public class Deck {
 //    public Deck(ArrayList<Integer> usedCards) {
 //        this.usedCards = usedCards;
 //    }
-public void loadCardsArray(){
-    System.out.println("LOADING deck from Deck.java now");
-    Card cCard = new Card();
-    int i = 0;
-    int iSuit = cCard.suit.length;
-    int iRank = cCard.rank.length;
-    for (char s : cCard.suit) {
-        for (char r : cCard.rank) {
-            cCard.deckOfCards[i] = String.valueOf(r) + String.valueOf(s);
-            System.out.print(cCard.deckOfCards[i] + " ");
-            //int m = i % 13;  COMMENT out next 3 later
-            if (i == 12 | i == 25 || i == 38 | i == 51) {
-                System.out.println();
-            }
-            cCard.cardInDeck[i] = i;
-            i++;
-        }
-    }
-    //return deckOfCards[];
-    //System.out.println(Card.toString());
-}
+
     public void addCardToArrayListCard(int addCard){
         usedCards.add(addCard);
         System.out.println(usedCards);
@@ -46,7 +26,7 @@ public void loadCardsArray(){
     public void catchUsedCard(int a){
         putCardInUsedCards(a);
     }
-
+    
     public ArrayList<Integer> putCardInUsedCards(int iIncoming){
         ArrayList<Integer> usedCards = new ArrayList<Integer>();
         usedCards.add(iIncoming);
