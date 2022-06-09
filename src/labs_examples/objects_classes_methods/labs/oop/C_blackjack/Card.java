@@ -10,8 +10,18 @@ public class Card{
     public int[] cardInDeck = new int[52];
     protected int holdCard;
 
+    public void callCardsFromCards(){
+        System.out.println("***CARDS***BEGIN of --> public void callCardsFromCards() ***");
+        Card cCard = new Card();   //Card.java
+        System.out.print("Ignore messing around" + cCard.deckOfCards[26] + "-->");     //Ace of Hearts
+        System.out.println(cCard.cardInDeck[26]);
+        System.out.println("***CARDS***END of --> public void callCardsFromCards() ***");
+    }
 
+
+/*
     public void loadCards(){
+        System.out.println("***CARD***BEGIN of --> public void loadCards() ***");
         int i = 0;
         int iSuit = suit.length;
         int iRank = rank.length;
@@ -29,6 +39,9 @@ public class Card{
         }
         //return deckOfCards[];
         //System.out.println(Card.toString());
+        System.out.println("***CARD***END of --> public void loadCards() ***");
     }
+
+ */
 }
 

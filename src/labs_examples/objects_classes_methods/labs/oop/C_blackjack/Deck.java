@@ -17,7 +17,16 @@ public class Deck {
 //    public Deck(ArrayList<Integer> usedCards) {
 //        this.usedCards = usedCards;
 //    }
+
+    public void callCardsFromDeck(){
+        System.out.println("***DECK***BEGIN of --> public void callCardsFromCards() ***");
+        Card cCard = new Card();   //Card.java
+        System.out.print("Ignore messing around" + cCard.deckOfCards[26] + "-->");     //Ace of Hearts
+        System.out.println(cCard.cardInDeck[26]);
+        System.out.println("***DECK***END of --> public void callCardsFromCards() ***");
+    }
 public void loadCardsArray(){
+    System.out.println("***DECK***BEGIN of --> public void loadCardsArray() ***");
     System.out.println("LOADING deck from Deck.java now");
     Card cCard = new Card();
     int i = 0;
@@ -37,19 +46,24 @@ public void loadCardsArray(){
     }
     //return deckOfCards[];
     //System.out.println(Card.toString());
+    System.out.println("***DECK***END of --> public void loadCardsArray() ***");
 }
     public void addCardToArrayListCard(int addCard){
+        System.out.println("***DECK***BEGIN of --> public void addCardToArrayListCard(int addCard) ***");
         usedCards.add(addCard);
         System.out.println(usedCards);
         //return addCard;
+        System.out.println("***DECK***END of --> public void addCardToArrayListCard(int addCard) ***");
     }
     public void catchUsedCard(int a){
         putCardInUsedCards(a);
     }
 
     public ArrayList<Integer> putCardInUsedCards(int iIncoming){
+        System.out.println("***DECK***BEGIN of --> public ArrayList<Integer> putCardInUsedCards(int iIncoming) ***");
         ArrayList<Integer> usedCards = new ArrayList<Integer>();
         usedCards.add(iIncoming);
+        System.out.println("***DECK***END of --> public ArrayList<Integer> putCardInUsedCards(int iIncoming) ***");
         return usedCards;
     }
 //-------------------------------------------------------------------------------------
@@ -73,17 +87,21 @@ public void loadCardsArray(){
 //    }
  //-------------------------------------------------------------------------------------
     public static int dealFirstCard() {
+        System.out.println("***DECK***BEGIN of --> public static int dealFirstCard() ***");
         int firstCard = getRandomNumber();
         System.out.println("Next line is random number:" + firstCard);
         Card theHoldCard = new Card();
         theHoldCard.holdCard = firstCard;
+        System.out.println("***DECK***END of --> public static int dealFirstCard() ***");
         return firstCard;
     }
 
     public static int getRandomNumber() {
+        System.out.println("***DECK***BEGIN of --> public static int getRandomNumber() ***");
         Random rand = new Random();
         int upperBound = 51;
         int iRandom = rand.nextInt(upperBound);
+        System.out.println("***DECK***END of --> public static int getRandomNumber() ***");
         return iRandom;
     }
 

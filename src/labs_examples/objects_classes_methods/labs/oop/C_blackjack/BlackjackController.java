@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class BlackjackController {
     public static void main(String[] args) {
+        System.out.println("***BLACKJACKCONTROLLER***BEGIN of --> public static void main(String[] args) ***");
         Card cCard = new Card();   //Card.java
         Deck dDeck = new Deck();   //Deck.java
         Player pPlayer = new Player();   //Player.java
@@ -19,7 +20,9 @@ public class BlackjackController {
 
         System.out.print("Ignore messing around" + cCard.deckOfCards[26] + "-->");     //Ace of Hearts
         System.out.println(cCard.cardInDeck[26]);
-
+        cCard.callCardsFromCards();
+        dDeck.callCardsFromDeck();
+        pPlayer.callCardsFromPlayer();
         int initialCard = dDeck.dealFirstCard();   //Deck.java   Go get initial card by calling deal first hand which calls Random Number Generator
         System.out.println(Player.getPlayersName() + " your first card is " + cCard.deckOfCards[initialCard]);
         System.out.println();
@@ -52,5 +55,7 @@ public class BlackjackController {
 //                A a = new A();
 //                System.out.println("I live in A " + a.a);
 //            }
+        System.out.println("***BLACKJACKCONTROLLER***END of --> public static void main(String[] args) ***");
     }
+
 }

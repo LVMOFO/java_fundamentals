@@ -10,15 +10,24 @@ public class Player {
 
 
 
-
+    public void callCardsFromPlayer(){
+        System.out.println("***PLAYER***BEGIN of --> public void callCardsFromCards() ***");
+        Card cCard = new Card();   //Card.java
+        System.out.print("Ignore messing around" + cCard.deckOfCards[26] + "-->");     //Ace of Hearts
+        System.out.println(cCard.cardInDeck[26]);
+        System.out.println("***PLAYER***END of --> public void callCardsFromCards() ***");
+    }
     public static String getPlayersName(){
+        System.out.println("***PLAYER***BEGIN of --> public static String getPlayersName() ***");
         //Get player name from prompt
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String sInputName = scanner.next();
         System.out.println("---- Welcome to our game of Blackjack " + sInputName + "!____");
+        System.out.println("***PLAYER***END of --> public static String getPlayersName() ***");
         return sInputName;
     }
+
 
 
 
