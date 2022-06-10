@@ -1,18 +1,28 @@
-package labs_examples.objects_classes_methods.labs.oop.C_blackjack.firstAttempt;
+package labs_examples.objects_classes_methods.labs.aHold.BJ;
 /**
  * Created by Bo Bender 220605@1738
  */
 public class Card{
-    protected char[] suit = new char[]{'♣', '♦', '♥', '♠'};
+    public char[] suit = new char[]{'♣', '♦', '♥', '♠'};
     protected int cardValue;
     protected char[] rank = new char[]{'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
     public String[] deckOfCards = new String[52];
-    protected int[] cardInDeck = new int[52];
+    public int[] cardInDeck = new int[52];
     protected int holdCard;
 
+    public void callCardsFromCards(){
+        System.out.println("***CARDS***BEGIN of --> public void callCardsFromCards() ***");
+        Card cCard = new Card();   //Card.java
+        System.out.print("Ignore messing around" + cCard.deckOfCards[26] + "-->");     //Ace of Hearts
+        System.out.println(cCard.cardInDeck[26]);
+        System.out.println("***CARDS***END of --> public void callCardsFromCards() ***");
 
-    //public void int[] loadCards(){
+    }
+
+
+/*
     public void loadCards(){
+        System.out.println("***CARD***BEGIN of --> public void loadCards() ***");
         int i = 0;
         int iSuit = suit.length;
         int iRank = rank.length;
@@ -30,6 +40,9 @@ public class Card{
         }
         //return deckOfCards[];
         //System.out.println(Card.toString());
+        System.out.println("***CARD***END of --> public void loadCards() ***");
     }
+
+ */
 }
 
