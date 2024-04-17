@@ -6,13 +6,10 @@ public class Card {
     //(POJO - this will hold card data)
     protected char[] suit = new char[]{'♠', '♦', '♥', '♣'};
     protected int cardValue;
-    //CREATED two below arrays on my own
     protected char[] rank = new char[]{'A','2','3','4','5','6','7','8','9','T','J','Q','K'};
-    //public int[] theCardInDeck = new int[52];
-    //public int[] cardInDeck = new int[52];
-   // protected String[] deckOfCards = new String[52];
 
-    public Card(){}
+
+   // public Card(){}
     public Card(char[] suit, char[] rank) {
         this.suit = suit;
         this.rank = rank;

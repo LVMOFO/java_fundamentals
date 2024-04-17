@@ -2,18 +2,45 @@ package labs_examples.objects_classes_methods.labs.oop.C_blackjack;
 /**
  * Created by Bo Bender 220610@0722
  */
-import labs_examples.objects_classes_methods.labs.bHoldBJ.Card;
 import java.util.ArrayList;
 
 
-public class Deck extends labs_examples.objects_classes_methods.labs.oop.C_blackjack.Card {
+public class Deck extends Card {
     //(POJO - this will hold deck data)
     protected Card[] cards;
-    public int[] iCard = new int[52];
-    public String[] sCard = new String[52];
+    protected int[] iCard = new int[52];
+    protected String[] sCard = new String[52];
     ArrayList<Integer> usedCards;
 
-    public static loadDeckCardsArray(){
+   public Deck(){}
+
+    public Deck(suit, cardValue, rank, Card[] cards, int[] iCard, String[] sCard, ArrayList<Integer> usedCards) {
+        super.suit = suit;
+        super.cardValue = cardValue;
+        super.rank = rank;
+        this.cards = cards;
+        this.iCard = iCard;
+        this.sCard = sCard;
+        this.usedCards = usedCards;
+    }
+
+    public Deck(char[] suit, char[] rank, Card[] cards, int[] iCard, String[] sCard, ArrayList<Integer> usedCards) {
+        super(suit, rank);
+        this.cards = cards;
+        this.iCard = iCard;
+        this.sCard = sCard;
+        this.usedCards = usedCards;
+    }
+
+    public Deck(char[] suit, int cardValue, char[] rank, Card[] cards, int[] iCard, String[] sCard, ArrayList<Integer> usedCards) {
+        super(suit, cardValue, rank);
+        this.cards = cards;
+        this.iCard = iCard;
+        this.sCard = sCard;
+        this.usedCards = usedCards;
+    }
+
+    public void loadDeckCardsArray(){
         int i = 0;
         int iSuit = super.suit.length;
         int iRank = super.rank.length;
